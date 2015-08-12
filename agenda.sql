@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS "contactos";
+CREATE TABLE "contactos" ("id_contacto" NUMERIC PRIMARY KEY  NOT NULL  UNIQUE , "nombre_contacto" TEXT, "apellido_paterno" TEXT, "apellido_materno" TEXT, "direccion" TEXT, "codigo_postal" TEXT, "correo_electronico" TEXT, "fecha_nacimiento" DATETIME);
+INSERT INTO "contactos" VALUES(1,'armando','silva','brito','altavista','74220','silva.armando@gmail.com','22-dic-1998');
+INSERT INTO "contactos" VALUES(2,'estafania','serrano','hernandez','4 norte #245 col. centro','74210','faanny1232@hotmail.com','13-mar-1996');
+INSERT INTO "contactos" VALUES(3,'isabel','salmoran','coyotl','margaritas #423 col.tlamapa','74240','d-ianis03@hotmail.com','03-dic-1999');
+INSERT INTO "contactos" VALUES(4,'veronica','arellano','rios','celle de los abedules #454 col. el popo','74200','vero.arellano@gmail.com','07-ene-1993');
+INSERT INTO "contactos" VALUES(5,'leonardo','hernandez','reyes','7 sur #890 col. chapulapa','74200','leo.hernandez1996@gmail.com','25-may-1996');
+DROP TABLE IF EXISTS "telefono";
+CREATE TABLE "telefono" ("id_telefono" NUMERIC, "id_contacto" NUMERIC, "numero_telefonico" NUMERIC);
+INSERT INTO "telefono" VALUES(1,1,2441197954);
+INSERT INTO "telefono" VALUES(2,2,2441102816);
+INSERT INTO "telefono" VALUES(3,3,2331235486);
+INSERT INTO "telefono" VALUES(4,4,2224384150);
+INSERT INTO "telefono" VALUES(5,5,2223281596);

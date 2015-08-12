@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+ <body>
+ <!-- Principal -->
+ <div data-role="page" id="bienvenida" >
+ <div data-role="header">
+ <h1> bienvenido </h1>
+ </div>   
+  <div data-role="main" class="ui-content">
+  	<div align="center" style="width:80%;">
+    	<p>en la siguiente aplicacion podras encontrar todos tus contactos con su respectiva informacion</p>
+  	</div>
+    <div align="right">
+    <a href="#opciones" id="btnopciones" class="ui-btn ui-icon-bars ui-btn-icon-right ui-btn-inline ui-btn-corner-all">comenzar</a>
+    </div>       
+ </div>
+  <div data-role="footer">
+    <h1>@arturo izucar</h1>
+  </div>
+ </div>  
+ <!-- Principal -->
+ <!-- Principal -->
+ <div data-role="page" id="opciones" >
+ <div data-role="header">
+ <h1> opciones </h1>
+ </div>   
+  <div data-role="main" class="ui-content">
+  	<div align="center">
+     <a href="#agregar" id="btnagregar" class="ui-btn ui-icon-user ui-btn-icon-right ui-btn-inline ui-btn-corner-all">nuevo contacto</a>
+    </div>
+    <div align="center">
+     <a href="#buscar" id="btnirabuscar" class="ui-btn ui-icon-search ui-btn-icon-right ui-btn-inline ui-btn-corner-all">buscar contacto</a>
+    </div>
+ </div><!--content-->
+ </div>  
+ <!-- Principal -->
+ <!-- Principal -->
+ <div data-role="page" id="agregar" >
+ <div data-role="header">
+ <h1> agregar contacto </h1>
+ </div>   
+  <div data-role="main" class="ui-content">
+  		<div align="center" style="width:100%; height:200px;">
+  		  <!--fotografia-->
+        </div>
+    	<div align="center" style="float:left; width:49%;">
+        <input id="nombre_contacto" placeholder="nombre:">
+        <input id="apellido_paterno" placeholder="apellido paterno:">
+        <input id="apellido_materno" placeholder="apellido materno:">
+        </div>
+        <div align="center" style="width:49%; float:right;">
+        <input id="codigo_postal" placeholder="codigo postal:">
+        <input id="correo_electronico" placeholder="correo electronico:">
+        <input id="fecha_nacimiento" placeholder="fecha de nacimiento:">
+        </div>
+        <div align="center" style="float:left; width:100%;">
+        <input id="direccion" placeholder="direccion:">
+        </div>
+	<div>
+    	<div align="center" style="width:49%; float:left;">
+         <a href="#" id="btnguardar" class="ui-btn ui-icon-check ui-btn-icon-right ui-btn-inline ui-btn-corner-all">guardar</a>
+    	</div>
+        <div align="center" style="width:49%; float:right;">
+        <a href="#opciones" id="btn_agregar_regresar" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-corner-all">cancelar</a>
+        </div>
+    </div>
+ </div>
+ </div>  
+ <!-- Principal -->
+ <!-- Principal -->
+ <div data-role="page" id="buscar" >
+ <div data-role="panel" data-position="right" data-display="push" id="panel_buscar">
+    <!-- panel content goes here -->
+   <input id="buscar_contacto" placeholder="nombre del contacto">
+   <a href="#" id="btn_buscar" class="ui-btn ui-icon-navigation ui-btn-icon-right ui-btn-inline ui-btn-corner-all">buscar</a>
+</div><!-- /panel -->
+
+ <div data-role="header">
+ <h1> contacto </h1>
+ </div>   
+  <div data-role="main" class="ui-content">
+  	<div>
+    	<div align="center" style="width:40%; height:200px; float:left;">
+        <!--fotografia-->
+        </div>
+        <div align="center" style="width:40%; height:200px; float:left;">
+        <h3>nombre</h3>
+        <h3>apellido paterno</h3>
+        <h3>apellido materno</h3>
+        </div>
+        <div align="center" style="width:20%; height:200px; float:left;">
+        <a href="#panel_buscar" id="btn_ir_buscar" class="ui-btn ui-icon-navigation ui-btn-icon-right ui-btn-inline ui-btn-corner-all">buscar contacto</a>
+        </div>
+        <div align="center">
+        <h3>direccion</h3>
+        <h3>codigo postal</h3>
+        <h3>correo electronico</h3>
+        <h3>fecha de nacimiento</h3>
+        <h3>telefono</h3>
+        </div>
+        <div align="center">
+        <a href="#editar" id="btn_ir_editar" class="ui-btn ui-icon-edit ui-btn-icon-right ui-btn-inline ui-btn-corner-all">editar</a>
+          <a href="#" id="btn_eliminar_contacto" class="ui-btn ui-icon-edit ui-btn-icon-right ui-btn-inline ui-btn-corner-all">eliminar</a>
+         <a href="#opciones" id="btn_contacto_regresar" class="ui-btn ui-icon-check ui-btn-icon-right ui-btn-inline ui-btn-corner-all">inicio</a>
+        </div>
+    </div>
+ </div>
+ </div>  
+ <!-- Principal -->
+ <!-- Principal -->
+ <div data-role="page" id="editar" >
+ <div data-role="header">
+ <h1> editar </h1>
+ </div>   
+  <div data-role="main" class="ui-content">
+  	<div align="center" style="width:40%; height:200px; float:left;">
+        <!--fotografia-->
+        </div>
+      <div align="center" style="width:60%; height:200px; float:left;">
+       <div> <input id="editar_nombre" placeholder="nombre:"></div>
+        <div> <input id="editar_apellido_paterno" placeholder="apellido paterno:"></div>
+        <div> <input id="editar_apellido_materno" placeholder="apellido materno:"></div>
+        </div>
+        <div align="center">
+        <div style="float:left; width:100%;"> <input id="editar_direccion" placeholder="direccion:"></div>
+        <div style="float:left; width:100%;"><input id="editar_codigo_postal" placeholder="codigo postal:"></div>
+        <div style="float:left; width:100%;"><input id="editar_correo_electronico" placeholder="correo_electronico:"></div>
+        <div style="float:left; width:100%;"><input id="editar_fecha_nacimiento" placeholder="fecha de nacimiento:"></div>
+        <div style="float:left; width:100%;"><input id="telefono" placeholder="numero telefonico:"></div>
+        </div> 
+        <div align="center">
+         <a href="#" id="guardar_edicion" class="ui-btn ui-icon-edit ui-btn-icon-right ui-btn-inline ui-btn-corner-all">guardar edicion</a>
+         <a href="#opciones" id="btn_editar_regresar" class="ui-btn ui-icon-check ui-btn-icon-right ui-btn-inline ui-btn-corner-all">inicio</a>
+        </div>  
+ </div>  
+ <!-- Principal -->
+ </body>
+</html> 
