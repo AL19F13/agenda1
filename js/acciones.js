@@ -2,7 +2,7 @@
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){	
 alert("dispositivo listo");
-var basedatos=window.sqlitePlugin.opendatabase({name: "agenda.db",createFromLocation:1});
+var basedatos=window.sqlitePlugin.openDatabase({name: "agenda.db",createFromLocation:1});
 alert("despues de la base");
 	cargarnombrecontacto();
 	function cargarnombrecontacto ()
