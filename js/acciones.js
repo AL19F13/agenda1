@@ -9,11 +9,11 @@ alert("despues de la base");
 	{
 		alert("despues de la carga");
 		basedatos.transaction(function(ejecutar){
-			alert("basedatos.transaction")
+			alert("basedatos.transaction");
 			var sql="SELECT nombre_contacto FROM contactos";
-			alert("sql")
+			alert("sql");
 			ejecutar.excecuteSql(sql,undifined,function(ejecutar,resultado){
-				alert("ejecutar")
+				alert("ejecutar");
 				var datoscontacto=resultado.rows.item(0);
 				var nombre = datoscontacto.nombre_contacto;
 				alert(nombre);
