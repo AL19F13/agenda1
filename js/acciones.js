@@ -13,7 +13,6 @@ alert("despues de la base");
 			var sql="SELECT * FROM contactos;";
 			alert("sql");
 			ejecutar.executeSql(sql,undifined,function(ejecutar,resultado){
-				
 				alert("ejecutar");
 				var datoscontacto=resultado.rows.item(0);
 				var nombre = datoscontacto.nombre_contacto;
