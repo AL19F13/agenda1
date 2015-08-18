@@ -17,7 +17,7 @@ alert("despues de la base");
 				alert("ejecutar");
 				var datoscontacto=resultado.rows.item(0);
 				var nombre = datoscontacto.nombre_contacto;
-				alert(nombre);
+				alert('nombre');
 			});
 		});
 	}
