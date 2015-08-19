@@ -21,7 +21,17 @@ alert("despues de la base");
 			});
 		});
 	}
-	
+	$('#btnguardar').on('tap'),(function(){
+		var nombre=$('#nombre_contacto').val();
+		var ap_pater=$('#apellido_paterno').val();
+		var ap_mater=$('#apellido_materno').val();
+		var cp=$('#codigo_postal').val();
+		var correo=$('#correo_electronico').val();
+		var fecha_na=$('#fecha_nacimiento').val();
+		var direc=$('#direccion').val();
+		basedatos.transaction(function(consulta){
+			consulta.executeSql("INSERT INTO contactos VALUES (id, nombre, ap_pater, apmater, cp, correo, fecha_na, direc")
+	});
 }); 
 });
-
+});
