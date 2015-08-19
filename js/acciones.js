@@ -13,6 +13,7 @@ alert("despues de la base");
 			var sql="SELECT * FROM contactos;";
 			alert("sql");
 			ejecutar.executeSql(sql,undifined,function(ejecutar,resultado){
+				
 				alert("ejecutar");
 				var datoscontacto=resultado.rows.item(0);
 				var nombre = datoscontacto.nombre_contacto;
@@ -29,7 +30,7 @@ alert("despues de la base");
 		var fecha_na=$('#fecha_nacimiento').val();
 		var direc=$('#direccion').val();
 		basedatos.transaction(function(consulta){
-			consulta.executeSql("INSERT INTO contactos VALUES (id, nombre, ap_pater, apmater, cp, correo, fecha_na, direc")
+			consulta.executeSql("INSERT INTO contactos VALUES (id, nombre, ap_pater, ap_mater, cp, correo, fecha_na, direc")
 	});
 }); 
 });
