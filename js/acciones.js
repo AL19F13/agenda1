@@ -31,6 +31,7 @@ alert("despues de la base");
 		var direc=$('#direccion').val();
 		basedatos.transaction(function(consulta){
 			consulta.executeSql("INSERT INTO contactos VALUES (id, nombre, ap_pater, ap_mater, cp, correo, fecha_na, direc")
+			alert("guardado");
 	});
 }); 
 });
